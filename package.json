@@ -3,7 +3,7 @@
   "name": "cordova-js",
   "description": "Cordova JavaScript: a unified JavaScript layer for the Cordova suite of projects enabling cross-platform native mobile development of applications using HTML, CSS and JavaScript.",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.18.0"
   },
   "version": "6.1.1-dev",
   "repository": "github:apache/cordova-js",
