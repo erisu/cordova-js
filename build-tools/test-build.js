@@ -67,7 +67,7 @@ function buildCordovaJsTestBundle (bundlePath) {
 function collectTestBuildModules () {
     // Add platform-specific modules that have tests to the test bundle.
     const platformModules = ['android', 'ios'].map(platform => {
-        const platformPath = path.dirname(require.resolve(`cordova-${platform}/package`));
+        const platformPath = path.join(__dirname, `../test/modules/cordova-${platform}`);
         const modulePath = path.join(platformPath, 'cordova-js-src');
         const modules = collectModules(modulePath);
 

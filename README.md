@@ -73,11 +73,31 @@ Finally, it calls the platform-specific `initialize` function (located in the pl
 
 ## Testing
 
+Before running tests, we need to initialize and update the submodules. These submodules point to our Cordova platforms and are only used for testing purposes.
+
+If you have not yet cloned this repository, you can use the following command to clone the repo and initialize and update the submodules all at once:
+
+```zsh
+git clone --recurse-submodules https://github.com/apache/cordova-js.git
+```
+
+If the repo has already been cloned but the submodules are not initialized or updated, run:
+
+```zsh
+git submodule update --init
+```
+
+The initialization step only needs to be done once. After pulling in new changes, run the update command to ensure the submodules are up to date:
+
+```zsh
+git submodule update --recursive
+```
+
 Tests run in a bundled headless Chromium instance. They can be run with:
 
-  ```bash
-  npm test
-  ```
+```zsh
+npm test
+```
 
 Final testing should always be done with the [Mobile Spec test application](https://github.com/apache/cordova-mobile-spec).
 

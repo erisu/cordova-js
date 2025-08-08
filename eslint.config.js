@@ -24,7 +24,8 @@ const browserTestConfig = require('@cordova/eslint-config/browser-tests');
 module.exports = defineConfig([
     globalIgnores([
         '**/coverage/',
-        '**/pkg/'
+        '**/pkg/',
+        '**/test/modules/'
     ]),
     ...browserConfig.map(config => ({
         ...config,

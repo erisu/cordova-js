@@ -1,6 +1,7 @@
 .*
 *.tgz
 coverage
+eslint.config.js
 pkg
 test
 karma.conf.js

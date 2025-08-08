@@ -1,0 +1,6 @@
+[submodule "test/modules/cordova-ios"]
+	path = test/modules/cordova-ios
+	url = git@github.com:apache/cordova-ios.git
+[submodule "test/modules/cordova-android"]
+	path = test/modules/cordova-android
+	url = git@github.com:apache/cordova-android.git
